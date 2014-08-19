@@ -1,0 +1,9 @@
+---
+- name: Check out dotfiles repo
+  git: repo=git@github.com:jenkoian/dotfiles.git dest={{ dotfiles_dir }}
+
+- name: Apply dotfiles
+  shell: rcup -f -d {{ dotfiles_dir }}
+
+- name: Apply local git config
+  template: src=gitconfig.local.j2 dest=~/.gitconfig.local

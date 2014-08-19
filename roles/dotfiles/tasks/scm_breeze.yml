@@ -1,0 +1,18 @@
+---
+- name: Check scm_breeze is installed
+  stat: path=~/.scm_breeze
+  register: scm_breeze_installed
+
+- name: Check out scm breeze
+  git: repo=git://github.com/ndbroadbent/scm_breeze.git dest=~/.scm_breeze
+  when: not scm_breeze_installed.stat.exists
+
+- name: Install scm breeze
+  shell: ~/.scm_breeze/install.sh
+  when: not scm_breeze_installed.stat.exists
+
+- name: Update scm breeze
+  command: update_scm_breeze executable=/usr/local/bin/zsh
+  when: scm_breeze_installed.stat.exists
+  register: result
+  changed_when: result.stdout.find('Already up-to-date') != -1

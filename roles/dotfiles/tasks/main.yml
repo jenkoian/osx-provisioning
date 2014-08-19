@@ -1,0 +1,4 @@
+---
+- include: zsh.yml
+- include: scm_breeze.yml
+- include: dotfiles.yml

@@ -1,0 +1,19 @@
+---
+- name: Add zsh to /etc/shells
+  lineinfile: dest=/etc/shells
+              state=present
+              line=/usr/local/bin/zsh
+
+- name: Change default shell to zsh
+  command: chsh -s /usr/local/bin/zsh
+  when: ansible_env["SHELL"].find('/usr/local/bin/zsh') == -1
+  register: result
+  changed_when: result.stdout.find('no changes made') != -1
+
+- name: Check oh-my-zsh is installed
+  stat: path=~/.oh-my-zsh
+  register: oh_my_zsh_installed
+
+- name: Install oh-my-zsh
+  shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+  when: not oh_my_zsh_installed.stat.exists

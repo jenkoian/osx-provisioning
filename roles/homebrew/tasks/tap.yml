@@ -1,0 +1,4 @@
+---
+- name: Tap new formula repository
+  homebrew_tap: tap={{ item }} state=present
+  with_items: taps

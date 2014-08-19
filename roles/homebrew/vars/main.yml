@@ -1,0 +1,66 @@
+---
+homebrew_update: false
+caskroom_dir: /usr/local/caskroom
+application_dir: /Applications
+
+#TODO: move to dotfiles
+cask_env:
+  HOMEBREW_CASK_OPTS: "--appdir={{ application_dir }} --caskroom={{ caskroom_dir }}"
+
+taps:
+  - caskroom/cask
+  - homebrew/dupes
+  - homebrew/homebrew-php
+  - homebrew/versions
+  - thoughtbot/formulae
+
+brews:
+  - ack
+  - ant
+  - brew-cask
+  - curl
+  - dnsmasq
+  - git
+  - gnu-sed
+  - htop-osx
+  - httpie
+  - icu4c
+  - imagemagick
+  - nmap
+  - npm
+  - rcm
+  - php55
+  - php55-intl
+  - rsync
+  - wget
+  - youtube-dl
+  - zsh
+
+casks:
+  - cord
+  - dropbox
+  - firefox
+  - flux
+  - google-chrome
+  - gpgtools
+  - handbrake
+  - hipchat
+  - iterm2
+  - kdiff3
+  - libreoffice
+  - limechat
+  - mesasqlite
+  - onepassword
+  - parallels
+  - phpstorm
+  - plug
+  - sequel-pro
+  - skype
+  - spectacle
+  - spotify
+  - the-unarchiver
+  - transmit
+  - trailer
+  - vagrant
+  - virtualbox
+  - vlc
