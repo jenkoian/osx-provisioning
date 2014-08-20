@@ -5,12 +5,12 @@ Inspired by [Craig Marvelley](https://github.com/craigmarvelley/macbook-provisio
 
 Provision:
 
-```ansible-playbook macbook.yml```
+```ansible-playbook osx.yml```
 
 Provisioning work computer?
 
-```ansible-playbook macbook.yml --extra-vars="email=ian@work.com"```
+```ansible-playbook osx.yml --extra-vars="email=ian@work.com"```
 
 Want to update all brews?
 
-```ansible-playbook macbook.yml --extra-vars="homebrew_update=true"```
+```ansible-playbook osx.yml --extra-vars="homebrew_update=true"```
