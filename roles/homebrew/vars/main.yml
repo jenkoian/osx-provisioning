@@ -10,7 +10,7 @@ cask_env:
 taps:
   - caskroom/cask
   - homebrew/dupes
-  - homebrew/homebrew-php
+  - homebrew/php
   - homebrew/versions
   - thoughtbot/formulae
 
@@ -30,7 +30,6 @@ brews:
   - npm
   - rcm
   - php55
-  - php55-intl
   - rsync
   - wget
   - youtube-dl
