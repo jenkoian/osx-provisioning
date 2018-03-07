@@ -1,5 +1,5 @@
 ---
-homebrew_update: false
+homebrew_update: true
 caskroom_dir: /usr/local/caskroom
 application_dir: /Applications
 
@@ -9,44 +9,61 @@ cask_env:
 
 taps:
   - caskroom/cask
-  - homebrew/dupes
-  - homebrew/php
-  - homebrew/versions
+  - homebrew/core
+  - homebrew/homebrew-php
+  - homebrew/services
   - thoughtbot/formulae
 
 brews:
   - ack
+  - ansible
   - ant
   - brew-cask
+  - cloc
+  - composer
+  - cowsay
   - curl
   - dnsmasq
+  - docker
+  - gifsicle
   - git
+  - git-cal
   - gnu-sed
   - htop-osx
   - httpie
   - icu4c
   - imagemagick
+  - macvim
   - nmap
-  - npm
+  - php72
+  - php72-intl
+  - php72-xdebug
+  - ponysay
+  - psysh
+  - rbenv
   - rcm
-  - php55
   - rsync
+  - tree
   - wget
-  - youtube-dl
+  - yarn
   - zsh
 
 casks:
   - cord
   - dropbox
   - firefox
+  - franz
   - flux
   - google-chrome
-  - gpgtools
   - handbrake
   - hipchat
+  - insomnia
   - iterm2
+  - jeromelebel-mongohub
   - kdiff3
+  - keepingyouawake
   - libreoffice
+  - licecap
   - limechat
   - mesasqlite
   - onepassword
@@ -58,8 +75,11 @@ casks:
   - spectacle
   - spotify
   - the-unarchiver
-  - transmit
   - trailer
+  - transmit
   - vagrant
+  - vagrant-manager
   - virtualbox
+  - visual-studio-code
   - vlc
+  - xquartz
