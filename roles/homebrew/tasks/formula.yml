@@ -12,8 +12,3 @@
     name: "{{ item }}"
     state: latest
   with_items: "{{ brews }}"
-
-- name: Modify alfred scope to include caskroom
-  shell: brew cask alfred link
-  register: result
-  changed_when: result.stdout.find('Successfully linked') != -1
