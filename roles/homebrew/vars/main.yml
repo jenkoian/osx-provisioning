@@ -49,6 +49,7 @@ brews:
   - zsh
 
 casks:
+  - java # install java first as some other casks require it
   - cord
   - dropbox
   - firefox
