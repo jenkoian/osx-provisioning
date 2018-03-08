@@ -45,6 +45,7 @@ brews:
 
 casks:
   - java # install java first as some other casks require it
+  - 1password
   - cord
   - dropbox
   - firefox
@@ -62,7 +63,6 @@ casks:
   - licecap
   - limechat
   - mesasqlite
-  - onepassword
   - parallels
   - phpstorm
   - plug
