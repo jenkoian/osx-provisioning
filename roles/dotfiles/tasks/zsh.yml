@@ -1,14 +1,17 @@
 ---
 - name: Add zsh to /etc/shells
-  lineinfile: dest=/etc/shells
-              state=present
-              line=/usr/local/bin/zsh
+  lineinfile:
+    dest: /etc/shells
+    state: present
+    line: /usr/local/bin/zsh
+  become: true
 
 - name: Change default shell to zsh
   command: chsh -s /usr/local/bin/zsh
   when: ansible_env["SHELL"].find('/usr/local/bin/zsh') == -1
   register: result
   changed_when: result.stdout.find('no changes made') != -1
+  become: true
 
 - name: Check oh-my-zsh is installed
   stat: path=~/.oh-my-zsh
