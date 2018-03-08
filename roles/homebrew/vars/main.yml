@@ -13,7 +13,6 @@ brews:
   - ack
   - ansible
   - ant
-  - brew-cask
   - cloc
   - composer
   - cowsay
