@@ -5,15 +5,15 @@
 
 - name: Install formulas via Homebrew
   homebrew: name={{ item }} state=latest
-  with_items: brews
+  with_items: {{ brews }}
 
 - name: Install casks via Homebrew cask
   homebrew_cask: name={{ item }} state=present
-  with_items: casks
-  environment: cask_env
+  with_items: {{ casks }}
+  environment: {{ cask_env }}
 
 - name: Modify alfred scope to include caskroom
   shell: brew cask alfred link
   register: result
   changed_when: result.stdout.find('Successfully linked') != -1
-  environment: cask_env
+  environment: {{ cask_env }}
