@@ -3,16 +3,16 @@
   homebrew: name=null state=absent update_homebrew=yes
   when: homebrew_update
 
+- name: Install casks via Homebrew cask
+  homebrew_cask: name={{ item }} state=present
+  with_items: "{{ casks }}"
+  environment: "{{ cask_env }}"
+
 - name: Install formulas via Homebrew
   homebrew:
     name: "{{ item }}"
     state: latest
   with_items: "{{ brews }}"
-
-- name: Install casks via Homebrew cask
-  homebrew_cask: name={{ item }} state=present
-  with_items: "{{ casks }}"
-  environment: "{{ cask_env }}"
 
 - name: Modify alfred scope to include caskroom
   shell: brew cask alfred link
