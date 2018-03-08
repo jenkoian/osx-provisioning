@@ -6,7 +6,6 @@
 - name: Install casks via Homebrew cask
   homebrew_cask: name={{ item }} state=present
   with_items: "{{ casks }}"
-  environment: "{{ cask_env }}"
 
 - name: Install formulas via Homebrew
   homebrew:
@@ -18,4 +17,3 @@
   shell: brew cask alfred link
   register: result
   changed_when: result.stdout.find('Successfully linked') != -1
-  environment: "{{ cask_env }}"
