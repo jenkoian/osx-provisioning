@@ -30,7 +30,6 @@ brews:
   - macvim
   - nmap
   - php72
-  - php72-intl
   - php72-xdebug
   - ponysay
   - psysh
