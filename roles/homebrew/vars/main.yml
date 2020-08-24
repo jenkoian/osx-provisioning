@@ -1,11 +1,8 @@
 ---
 homebrew_update: true
-caskroom_dir: /usr/local/caskroom
 
 taps:
-  - caskroom/cask
   - homebrew/core
-  - homebrew/homebrew-php
   - homebrew/services
   - thoughtbot/formulae
 
@@ -29,8 +26,7 @@ brews:
   - imagemagick
   - macvim
   - nmap
-  - php72
-  - php72-xdebug
+  - php73
   - ponysay
   - psysh
   - rbenv
@@ -44,28 +40,25 @@ brews:
 casks:
   - java # install java first as some other casks require it
   - 1password
-  - cord
   - dropbox
   - firefox
   - franz
   - flux
   - google-chrome
   - handbrake
-  - hipchat
   - insomnia
   - iterm2
-  - jeromelebel-mongohub
   - kdiff3
   - keepingyouawake
   - libreoffice
   - licecap
-  - limechat
   - mesasqlite
   - parallels
   - phpstorm
   - plug
   - sequel-pro
   - skype
+  - slack
   - spectacle
   - spotify
   - the-unarchiver
@@ -82,7 +75,6 @@ casks:
   - fantastical
   - tweetbot
   - tunnelbear
-  - slack
   - poedit
   - kindle
   - hiddenbar
