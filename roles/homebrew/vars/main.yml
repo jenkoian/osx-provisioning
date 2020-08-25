@@ -27,6 +27,7 @@ brews:
   - macvim
   - nmap
   - php@7.4
+  - brew-php-switcher
   - ponysay
   - psysh
   - rbenv
