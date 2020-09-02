@@ -26,6 +26,8 @@ brews:
   - imagemagick
   - macvim
   - nmap
+  - node
+  - nvm
   - php@7.4
   - brew-php-switcher
   - ponysay
@@ -33,6 +35,7 @@ brews:
   - rbenv
   - rcm
   - rsync
+  - travis
   - tree
   - wget
   - yarn
