@@ -16,6 +16,7 @@ brews:
   - curl
   - dnsmasq
   - docker
+  - gh
   - gifsicle
   - git
   - git-cal
