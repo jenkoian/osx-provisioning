@@ -25,14 +25,15 @@ brews:
   - httpie
   - icu4c
   - imagemagick
+  - java
   - macvim
   - nmap
   - node
   - nvm
+  - php
   - php@7.4
   - brew-php-switcher
   - ponysay
-  - psysh
   - rbenv
   - rcm
   - rsync
@@ -43,7 +44,6 @@ brews:
   - zsh
 
 casks:
-  - java # install java first as some other casks require it
   - 1password
   - dropbox
   - firefox
@@ -58,13 +58,15 @@ casks:
   - libreoffice
   - licecap
   - mesasqlite
+  - openvpn-connect
   - parallels
   - phpstorm
   - plug
-  - sequel-pro
+  - postman
+  - rectangle
+  - sequel-ace
   - skype
   - slack
-  - spectacle
   - spotify
   - the-unarchiver
   - trailer
@@ -75,7 +77,7 @@ casks:
   - visual-studio-code
   - vlc
   - xquartz
-  - zoomus
+  - zoom
   - notion
   - fantastical
   - tweetbot

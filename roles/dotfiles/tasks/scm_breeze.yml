@@ -11,8 +11,12 @@
   shell: ~/.scm_breeze/install.sh
   when: not scm_breeze_installed.stat.exists
 
+
 - name: Update scm breeze
-  command: update_scm_breeze executable=/usr/local/bin/zsh
+  shell: source ~/.zshrc; update_scm_breeze
+  args:
+    executable: /bin/zsh
   when: scm_breeze_installed.stat.exists
   register: result
   changed_when: result.stdout.find('Already up-to-date') != -1
+ 
